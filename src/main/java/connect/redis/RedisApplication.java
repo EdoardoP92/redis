@@ -54,7 +54,7 @@ public class RedisApplication {
 		while (receiver.getCount() == 0) {
 
 			LOGGER.info("Sending message...");
-			template.convertAndSend("chat", "Hello from Redis!");
+			template.convertAndSend("chat", "Hello Redis!");
 			Thread.sleep(500L);
 		}
 
